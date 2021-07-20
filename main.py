@@ -3,7 +3,7 @@ import time
 import winsound
 print('WELCOME TO GAME')
 print('ROCK PAPER SCISSOR')
-choices=['rock','paper','scissor']
+choices=['ROCK','PAPER','SCISSOR']
 name = input('Your Name = ')
 noofgames = int(input('How many matches you want to play = '))
 score_comp = int(0)
@@ -11,7 +11,8 @@ score_user = int(0)
 for i in range (noofgames):
     print('MATCH',end=' ')
     print(i+1)
-    user_choice = str(input('Your Choice = '))
+    user_choice1 = str(input('Your Choice = '))
+    user_choice = upper(user_choice1)
     comp_choice = str(random.choice(choices))
     if user_choice == choices[0] or user_choice == choices[1] or user_choice == choices[2]:
         print('and computer choose........')
